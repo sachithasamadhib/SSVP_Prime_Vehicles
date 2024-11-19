@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49603254-A9D1-41B2-AB2D-5069366F93A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarApp2</RootNamespace>
+    <AssemblyName>CarApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.4.3.0\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GuerrillaNtp, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GuerrillaNtp.3.1.0\lib\netstandard2.0\GuerrillaNtp.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51482d6f650b2b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.2.0.0\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=3.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.3.0.0\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.MahApps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.MahApps.1.0.0\lib\net462\MaterialDesignThemes.MahApps.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.5.0.0\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="Syncfusion.Licensing, Version=25.2462.4.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.25.2.4\lib\net462\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=25.2462.4.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.WPF.25.2.4\lib\net462\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.2.0.2\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="MVVM\ViewModel\ReturnViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\signupviewModel.cs" />
+    <Compile Include="MVVM\ViewModel\supportViewModel.cs" />
+    <Compile Include="MVVM\View\ReturnView.xaml.cs">
+      <DependentUpon>ReturnView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\supportView.xaml.cs">
+      <DependentUpon>supportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SSVPBill.xaml.cs">
+      <DependentUpon>SSVPBill.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AquaCustomize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AquaDefault.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AquaMoreData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerPaymentDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DashBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LexusCustomize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LexusDefault.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lexusMoreData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AquaCustomize.xaml.cs">
+      <DependentUpon>AquaCustomize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AquaDefault.xaml.cs">
+      <DependentUpon>AquaDefault.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AquaMoreData.xaml.cs">
+      <DependentUpon>AquaMoreData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ObservableObject.cs" />
+    <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="CustomerPaymentDetails.xaml.cs">
+      <DependentUpon>CustomerPaymentDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.xaml.cs">
+      <DependentUpon>DashBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LexusCustomize.xaml.cs">
+      <DependentUpon>LexusCustomize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LexusDefault.xaml.cs">
+      <DependentUpon>LexusDefault.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lexusMoreData.xaml.cs">
+      <DependentUpon>lexusMoreData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Models.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\aboutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\customizeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\DashboardHomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\loginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\modelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\PurchaseDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ReturnView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\SignUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\supportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PriusCustomize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PriusDefault.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PriusMoreData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SSVPBill.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\ComboBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\loginbtnTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\Normalbuttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\UIcolors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models.xaml.cs">
+      <DependentUpon>Models.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\ViewModel\aboutViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\customizeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DashboardHomeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\loginViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MainDashboardViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\mainViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\modelViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\PurchaseDetailsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\user.cs" />
+    <Compile Include="MVVM\View\aboutView.xaml.cs">
+      <DependentUpon>aboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\customizeView.xaml.cs">
+      <DependentUpon>customizeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\DashboardHomeView.xaml.cs">
+      <DependentUpon>DashboardHomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\loginView.xaml.cs">
+      <DependentUpon>loginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\modelView.xaml.cs">
+      <DependentUpon>modelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\PurchaseDetailsView.xaml.cs">
+      <DependentUpon>PurchaseDetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PriusCustomize.xaml.cs">
+      <DependentUpon>PriusCustomize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PriusDefault.xaml.cs">
+      <DependentUpon>PriusDefault.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PriusMoreData.xaml.cs">
+      <DependentUpon>PriusMoreData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="Videos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\carlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Firefly_An_new_car_brand_logo_named_SSVP_to_be_put_in_a_car._It_should_be_new_looking_.black_letter_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Toyota_C-HR_review_front34_dynamic %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LogoSSVP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\f3712c26bca08ab2f4fe36ca9d0e8af4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-username-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-password-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-home-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BackRemoveLOgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Untitled design %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logoEdit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CopyBackremove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SSVPSloganCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sspvcopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\welcomeCopy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\communityIcon_7th123qnkq3c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CCD006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\triadic-color-combinations-600x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\png-transparent-cryptocurrency-computer-icons-cardano-customizable-miscellaneous-trademark-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\png-clipart-car-auto-parts-photography-cartoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lexus-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pruis1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lxus1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\leather.jpeg" />
+    <Resource Include="Images\nylon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\halfSteer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fullSteer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rim1.jpeg" />
+    <Resource Include="Images\rim2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rim3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\butterflydoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lexus-LC-with-Doors-Open-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Analog.jpg" />
+    <Resource Include="Images\digital.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\faceBook.png" />
+    <Resource Include="Images\Instagram.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\X.jpg" />
+    <Resource Include="Images\YouTube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SSVP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\masterLogo.png" />
+    <Resource Include="Images\visaLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cusDetails %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\backCar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Untitled design.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Untitled design %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Name.png" />
+    <Resource Include="Images\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\24Service.png" />
+    <Resource Include="Images\Car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Website_Header_RaceTrack-ezgif.com-video-to-gif-converter.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.5.0.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

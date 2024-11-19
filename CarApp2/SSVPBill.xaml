@@ -1,0 +1,379 @@
+﻿<Window x:Class="CarApp2.SSVPBill"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarApp2"
+        mc:Ignorable="d"
+        Title="SSVPBill"     Height="1680" Width="1280" AllowsTransparency="True" Background="Transparent" 
+WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ScrollViewer>
+
+            <Grid>
+
+                <Border Background="White" CornerRadius="20" >
+                    <Grid>
+
+
+
+                        <StackPanel Background="White" Margin="0,0,0,1499">
+
+                            <Image Source="/Images/logoEdit1.png" Height="86" Width="759" />
+
+                            <Label Content="Purchase Confirm" FontSize="45" FontWeight="DemiBold" Width="382" Height="106"/>
+                            <TextBlock Text="Car ID :"
+                                Foreground="Black"
+                                FontSize="15"
+                                FontWeight="Medium"
+                                FontFamily="Montserrat"                             
+                                Margin="10,15,0,0"/>
+                            <TextBox x:Name="Vehicle_Id"  Background="Transparent"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"                            
+                    Foreground="Black"
+                    CaretBrush="Black"
+                    BorderBrush="Black"
+                    BorderThickness="0,0,0,2"
+                    Height="45"
+                       Margin="0,0,220,0"
+                       
+                    VerticalContentAlignment="Center"
+                    Padding="20,0,0,0" Width="900"/>
+
+                            <TextBlock Text="Engine Type :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtEngineType"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="45"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+                            <TextBlock Text="Colour :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtColour"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+                            <TextBlock Text="Quantity :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtQuantity"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,220,10"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+                            <TextBlock Text="National Identity Card Number(NIC) :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtNIC"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="541"/>
+
+                            <TextBlock Text="Country :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtCountry"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+                            <TextBlock Text="TelePhone Number :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtTelephone"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+                            <TextBlock Text="Deliver Date :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtDeliverDate"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+                            <TextBlock Text="Total Price :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                            <TextBox x:Name="txtPrice"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="57"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+                            <Button x:Name="btnOk"                          
+  BorderThickness="4"
+  Content="OK"
+  Foreground="White"
+  FontSize="14"
+  FontFamily="Montserrat"
+  Cursor="Hand"                           
+  Height="114" Width="452" Margin="550,0,0,0" Click="btnOk_Click"
+>
+
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}">
+                                        <Setter Property="Background" Value="CornflowerBlue"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="Goldenrod"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Width="150" Height="40"
+              CornerRadius="20"
+              Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+
+
+                            <Grid>
+                                <TextBlock Text="By Confirming the purchase you are adhere to all our terms and conditions "
+Foreground="Black"
+FontSize="25"
+FontWeight="Medium"
+FontFamily="Montserrat"                             
+Margin="10,65,0,0" Height="53" Width="838"/>
+
+                                <CheckBox x:Name="ckBoxOTP"  Margin="191,71,1061,-29"  BorderThickness="3" BorderBrush="Black" Checked="ckBoxOTP_Checked" />
+                            </Grid>
+
+                            <TextBlock Text="Enter your Email :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0" Height="30" Width="689"/>
+                            <TextBox x:Name="txtEmail"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="57"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="464" RenderTransformOrigin="0.5,0.5">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.006"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+
+                            <TextBlock Text="Enter the OTP :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0" Height="32" Width="585"/>
+                            <TextBox x:Name="txtOTP"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="33"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="157"/>
+
+
+
+                            <Grid>
+                                <Button x:Name="btnDefaultCOnfigOk"                          
+  BorderThickness="4"
+  Content="Confirm"
+  Foreground="White"
+  FontSize="14"
+  FontFamily="Montserrat"
+  Cursor="Hand"                           
+  Height="114" Width="452" Margin="550,0,0,0" Click="btnDefaultCOnfigOk_Click"
+>
+
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Background" Value="CornflowerBlue"/>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="Goldenrod"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Width="150" Height="40"
+              CornerRadius="20"
+              Background="{TemplateBinding Background}">
+                                                <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+
+                                <Button x:Name="btnPurchaseCancel"                          
+  BorderThickness="4"
+  Content="Cancel"
+  Foreground="White"
+  FontSize="14"
+  FontFamily="Montserrat"
+  Cursor="Hand"                           
+  Height="114" Width="452" Margin="500,0,331,0" Click="btnPurchaseCancel_Click"
+>
+
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Background" Value="CornflowerBlue"/>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="OrangeRed"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Width="150" Height="40"
+              CornerRadius="20"
+              Background="{TemplateBinding Background}">
+                                                <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

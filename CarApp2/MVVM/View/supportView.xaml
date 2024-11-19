@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="CarApp2.MVVM.View.supportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CarApp2.MVVM.View"
+       
+                          mc:Ignorable="d" d:DesignWidth="1282" Background="Transparent" Height="662">
+
+    <ScrollViewer Margin="0,0,10,10">
+        <Border CornerRadius="10" Background="White" Padding="5">
+            <Border>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height ="350"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="340"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="25,0,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="/Images/Logo.png" Width="135" HorizontalAlignment="Left" Margin="10,5,0,0"/>
+                        <Image Source="/Images/24Service.png" HorizontalAlignment="Center" Width="143" Grid.Column="1" Margin="0,0,0,5"/>
+                    </Grid>
+                    <StackPanel Grid.Row="1" Margin="-15,0,-12,0">
+                        <Image Source ="/Images/Car.jpg"/>
+                    </StackPanel>
+                    <TextBlock Grid.Row="1"  HorizontalAlignment="Left" 
+                        Foreground="Black" FontSize="45" FontWeight="Bold" Margin="25,76,0,76" Width="486">
+                     <Run Text="Welcome To SSVP "/>
+                          <LineBreak/>
+                     <Run Text="Support Center"/>
+                          <LineBreak/>
+                    </TextBlock>
+
+
+                    <Grid Grid.Row="2" Margin="0,43,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                            <TextBlock Text="Frequently Asked Questions" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" HorizontalAlignment="Center" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                            <Expander Header="How to use the application?" IsExpanded="True" FontSize="17">
+                                <TextBlock TextWrapping="Wrap" Text="First You have to Register To the App and Then you Can login to the system" Margin="10" FontSize="17"/>
+                            </Expander>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                            <Expander Header="How to contact support?" FontSize="17">
+                                <TextBlock TextWrapping="Wrap" Text="You can contact support via the form on the left or email us at support@ssvpprimevehicles.com" Margin="10" FontSize="17"/>
+                            </Expander>
+                        </StackPanel>
+                        <StackPanel Grid.Column="3" HorizontalAlignment="Center">
+                            <Expander Header="What is the response time?" FontSize="17">
+                                <TextBlock TextWrapping="Wrap" Text="Our support team will respond within 24-48 hours." Margin="10" FontSize="17"/>
+                            </Expander>
+                        </StackPanel>
+                    </Grid>
+
+                    <StackPanel Grid.Row="3" Margin="25,0,600,0">
+                        <TextBlock Text="Contact Us" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                        <TextBlock Text="Our Email:"/>
+                        <TextBox x:Name="txtouremail" Text="ssvpprime@gmail.com"  Margin="0,0,0,10"/>
+                        <TextBlock Text="Your Email:"/>
+                        <TextBox x:Name="txtyouremail" Margin="0,0,0,10"/>
+                        <TextBlock Text="Password:"/>
+                        <PasswordBox x:Name="txtPassword" Margin="0,0,0,10"/>
+                        <TextBlock Text="Message:"/>
+                        <TextBox x:Name="txtmessage" AcceptsReturn="True" Height="100" Margin="0,0,0,10"/>
+                        <Button x:Name="btnSubmit" Content="Submit" Click="btnSubmit_Click_1" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Margin="612,0,10,0">
+                        <TextBlock Height="215">
+
+                        </TextBlock>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+        </Border>
+    </ScrollViewer>
+</UserControl>

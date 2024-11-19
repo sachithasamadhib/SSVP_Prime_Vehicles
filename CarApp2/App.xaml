@@ -1,0 +1,70 @@
+﻿<Application x:Class="CarApp2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CarApp2"
+             xmlns:viewModel="clr-namespace:CarApp2.MVVM.ViewModel"
+             xmlns:view="clr-namespace:CarApp2.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/loginbtnTheme.xaml"/>
+                <ResourceDictionary Source="/Theme/UIcolors.xaml"/>
+                <ResourceDictionary Source="/Theme/ButtonStyles.xaml"/>
+                <ResourceDictionary Source="/Theme/ComboBoxStyle.xaml"/>
+                <ResourceDictionary Source="/Theme/Normalbuttons.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:loginViewModel}">
+                <view:loginView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:aboutViewModel}">
+                <view:aboutView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:signupviewModel}">
+                <view:SignUp/>
+            </DataTemplate>
+
+
+            <DataTemplate DataType="{x:Type viewModel:DashboardHomeViewModel}">
+                <view:DashboardHomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:modelViewModel}">
+                <view:modelView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:customizeViewModel}">
+                <view:customizeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PurchaseDetailsViewModel}">
+                <view:PurchaseDetailsView/>
+            </DataTemplate>
+
+
+            <DataTemplate DataType="{x:Type viewModel:ReturnViewModel}">
+                <view:ReturnView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewModel:supportViewModel}">
+                <view:supportView/>
+            </DataTemplate>
+
+
+
+
+
+
+        </ResourceDictionary>
+
+        
+    </Application.Resources>
+</Application>

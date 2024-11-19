@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="CarApp2.MVVM.View.aboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             xmlns:local="clr-namespace:CarApp2.MVVM.View"
+                mc:Ignorable="d"
+    Height="588" Width="1220"
+    Background="Transparent"
+    >
+    <ScrollViewer>
+        <Border CornerRadius="10" Background="White" Padding="5">
+            <Border>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="580"/>
+                        <RowDefinition Height="350"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" CornerRadius="10" ClipToBounds="True">
+                        <Image Grid.Row ="0" gif:ImageBehavior.RepeatBehavior="Forever"
+                   gif:ImageBehavior.AnimatedSource="/Images/SSVP.gif"
+                   Stretch="UniformToFill"/>
+
+                    </Border>
+                    <StackPanel Grid.Row="1" Margin="40,0,597,0">
+                        <TextBlock HorizontalAlignment="Left" 
+                           Foreground="Black" FontSize="24" FontWeight="Bold" Background="White"
+                           Margin="90,90,50,90" Width="415" Height="89">
+                        <Run Text="Driving Innovation for,"/>
+                             <LineBreak/>
+                        <Run Text="Tomorrow's Journey."/>
+                        </TextBlock>
+                    </StackPanel>
+                    <Border Grid.Row="2"  CornerRadius="10,10,10,10" Background="Black">
+                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"
+                        TextBlock.Text="© SSVP Prime Vehicles 2024" Margin="10,0,0,0">
+                        </TextBlock>
+                    </Border>
+                    <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
+                        TextBlock.Text="Follow Us On" Margin="-265,0,0,0">
+                    </TextBlock>
+                    <TextBlock Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"
+                        TextBlock.Text="All rights reserved" Margin="0,0,50,0">
+                    </TextBlock>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Source="/Images/faceBook.png" Width="30" Height="30" Margin="0,0,10,0"/>
+                        <Image Source="/Images/YouTube.png" Width="30" Height="30" Margin="10,0,10,0"/>
+                        <Image Source="/Images/Instagram.png" Width="30" Height="30" Margin="10,0,10,0"/>
+                        <Image Source="/Images/X.jpg" Width="30" Height="30" Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Margin="520,0,38,0">
+                        <TextBlock HorizontalAlignment="Left" 
+                           Foreground="Black" FontSize="15" FontWeight="Bold" Background="White"
+                           Margin="90,90,50,90" Width="531" Height="235">
+                        <Run Text="SSVP Prime Vehicles,where innovation fuels every journey"/>
+                             <LineBreak/>
+                        <Run Text="Our sleek designs and cutting-edge technology redefine driving.Experience"/>
+                             <LineBreak/>
+                        <Run Text="luxury, performance and sustainability with our state-of-the-art"/>
+                             <LineBreak/>
+                        <Run Text="vehicles. Join us and shape the future of mobility."/>
+                              <LineBreak/>
+                        <Run Text="Discover a driving experience like no other."/>
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Grid.Row="0" Margin="0,235,355,200">
+                        <TextBlock HorizontalAlignment="Center" FontSize="50" Height="187" Width="828" FontWeight="Bold" Foreground="White">
+                        <Run Text="  About SSVP Prime Vehicles.Com"/>
+                        </TextBlock>
+                    </StackPanel>
+                    <Line Grid.Row="0" X1="0" Y1="0" X2="1200" Y2="0" Stroke="White" StrokeThickness="3" 
+                      HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,138,0,0" Width="792"/>
+
+                    <StackPanel Grid.Row="0" Margin="685,0,0,449">
+                        <Image Source="/Images/Logo.png" Width="193" Height="190" 
+                           HorizontalAlignment="Right" Margin="10,10,200,-10"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,140,0,390">
+                        <TextBlock HorizontalAlignment="Right" FontSize="20" Height="187" Width="608" FontWeight="Bold" Foreground="White">
+                        <Run Text="Driving Innovation for Tomorrow's Journey"/>
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,998,447"/>
+                </Grid>
+            </Border>
+        </Border>
+    </ScrollViewer>
+</UserControl>

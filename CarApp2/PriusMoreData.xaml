@@ -1,0 +1,52 @@
+﻿<Window x:Class="CarApp2.PriusMoreData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarApp2"
+        mc:Ignorable="d"
+        Title="PriusMoreData" Height="381" Width="400" AllowsTransparency="True" Background="Transparent" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Background="#d7e0f9" CornerRadius="20" BorderThickness="1">
+            <Grid >
+                <TextBlock Text="SSVP Prius Specifications" FontSize="24" FontWeight="DemiBold" Margin="20,20,0,0"/>
+                <TextBlock HorizontalAlignment="Left" Margin="16,83,0,0" FontWeight="DemiBold" TextWrapping="Wrap" FontFamily="Arial" Text="Engine:" VerticalAlignment="Top" Foreground="Black" Height="36" Width="76" Opacity="0.9" FontSize="18" TextAlignment="Justify"/>
+                <TextBlock HorizontalAlignment="Left" Margin="97,83,0,0" FontWeight="DemiBold" TextWrapping="Wrap" FontFamily="Arial" Text="The ES 300h features a 2.5-liter 4-cylinder engine paired with an electric motor." VerticalAlignment="Top" Foreground="Black" Height="68" Width="291" Opacity="0.9" FontSize="18" TextAlignment="Justify"/>
+                <TextBlock HorizontalAlignment="Left" Margin="20,191,0,0" FontWeight="DemiBold" TextWrapping="Wrap" FontFamily="Arial" Text="Total Horsepower: " VerticalAlignment="Top" Foreground="Black" Height="28" Width="160" Opacity="0.9" FontSize="18" />
+                <TextBlock HorizontalAlignment="Left" Margin="199,193,0,0" FontWeight="DemiBold" TextWrapping="Wrap" FontFamily="Arial" Text="472 horsepower" VerticalAlignment="Top" Foreground="Black" Height="28" Width="160" Opacity="0.9" FontSize="18" />
+
+            </Grid>
+        </Border>
+        <Button x:Name="btnBack"                          
+        BorderThickness="4"
+        Content="Back"
+        Foreground="White"
+        FontSize="14"
+        FontFamily="Montserrat"
+        Cursor="Hand"
+        Margin="169,285,10,47" Click="btnBack_Click">
+
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#112f81"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Aquamarine"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Width="150" Height="40"
+                    CornerRadius="20"
+                    Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                  HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

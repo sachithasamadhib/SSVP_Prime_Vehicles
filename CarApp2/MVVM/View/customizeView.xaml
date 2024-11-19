@@ -1,0 +1,275 @@
+﻿<UserControl x:Class="CarApp2.MVVM.View.customizeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             xmlns:local="clr-namespace:CarApp2.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="Transparent" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="223*"/>
+            <RowDefinition Height="227*"/>
+        </Grid.RowDefinitions>
+
+
+
+
+
+        <Grid Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="49*"/>
+                <RowDefinition Height="401*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Border CornerRadius="20" Background="White" Grid.RowSpan="2" Grid.ColumnSpan="2" >
+
+            <!--caption-->
+            <StackPanel Grid.Row="1"
+            Orientation="Horizontal"
+            VerticalAlignment="Top" Height="20" Margin="10,10,-10,0">
+
+
+
+                <fa:IconImage Icon="ShoppingCart"
+                Height="20"
+                Width="20"
+                Foreground="{StaticResource titleColor3}"
+                Margin="35,0,10,0"/>
+                <TextBlock Text="Buy"
+                    Foreground="{StaticResource titleColor3}"
+                    FontSize="16"
+                    FontFamily="Medium"
+                    VerticalAlignment="Center"/>
+
+            </StackPanel>
+        </Border>
+        <Grid Margin="10,57,391,10" Background="Transparent" Grid.RowSpan="2">
+            <Image Source="/Images/lexus-removebg-preview.png" Height="182" Margin="-22,14,23,187" />
+            <TextBlock TextWrapping="Wrap" Text="SSVP Lexus" FontSize="35" FontFamily="Ariel" FontWeight="Bold" Height="72" Width="190" Margin="24,174,23,82"/>
+            <Button x:Name="btnDefaultLexus"                          
+        BorderThickness="4"
+        Content="Default"
+        Foreground="White"
+        FontSize="14"
+        FontFamily="Montserrat"
+        Cursor="Hand"                           
+        Margin="44,241,45,41" Click="btnDefaultLexus_Click"
+      >
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="CornflowerBlue"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="150" Height="40"
+                    CornerRadius="20"
+                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="btnCustomize"                          
+                BorderThickness="4"
+                Content="Customize"
+                Foreground="White"
+                FontSize="14"
+                FontFamily="Montserrat"
+                Cursor="Hand"                           
+                Margin="44,285,45,-3" Click="btnCustomize_Click"
+      >
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="CornflowerBlue"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="150" Height="40"
+                            CornerRadius="20"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+        </Grid>
+        <Grid Margin="278,57,124,10" Background="Transparent" Grid.RowSpan="2">
+            <Image Source="/Images/pruis1-removebg-preview.png" Height="182" Margin="10,14,14,187" />
+            <TextBlock TextWrapping="Wrap" Text="SSVP Prius" FontSize="35" FontFamily="Ariel" FontWeight="Bold" Height="72" Width="190" Margin="24,174,23,82"/>
+            <Button x:Name="btnDefaultPrius"                          
+  BorderThickness="4"
+  Content="Default"
+  Foreground="White"
+  FontSize="14"
+  FontFamily="Montserrat"
+  Cursor="Hand"                           
+  Margin="44,227,45,55" Click="btnDefaultPrius_Click"
+>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="CornflowerBlue"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="150" Height="40"
+              CornerRadius="20"
+              Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="btnCustomizePrius"                          
+          BorderThickness="4"
+          Content="Customize"
+          Foreground="White"
+          FontSize="14"
+          FontFamily="Montserrat"
+          Cursor="Hand"                           
+          Margin="44,275,45,7" Click="btnCustomizePrius_Click"
+>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="CornflowerBlue"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="150" Height="40"
+                      CornerRadius="20"
+                      Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                          HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+        </Grid>
+        <Grid Margin="556,57,0,10" Background="Transparent" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Image Source="/Images/lxus1-removebg-preview.png" Height="182" Margin="10,14,14,187" />
+            <TextBlock TextWrapping="Wrap" Text="SSVP Aqua" FontSize="35" FontFamily="Ariel" FontWeight="Bold" Height="72" Width="190" Margin="24,174,23,82"/>
+            <Button x:Name="btnDefaultAqua"                          
+  BorderThickness="4"
+  Content="Default"
+  Foreground="White"
+  FontSize="14"
+  FontFamily="Montserrat"
+  Cursor="Hand"                           
+  Margin="44,227,45,55" Click="btnDefaultAqua_Click"
+>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="CornflowerBlue"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="150" Height="40"
+              CornerRadius="20"
+              Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="btnCustomizeAqua"                          
+          BorderThickness="4"
+          Content="Customize"
+          Foreground="White"
+          FontSize="14"
+          FontFamily="Montserrat"
+          Cursor="Hand"                           
+          Margin="44,275,45,7" Click="btnCustomizeAqua_Click" 
+>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="CornflowerBlue"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkBlue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Width="150" Height="40"
+                      CornerRadius="20"
+                      Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                          HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+
+        </Grid>
+    </Grid>
+
+
+</UserControl>

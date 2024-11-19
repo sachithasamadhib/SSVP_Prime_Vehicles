@@ -1,0 +1,580 @@
+﻿<Window x:Class="CarApp2.CustomerPaymentDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarApp2"
+        mc:Ignorable="d"
+        Title="CustomerPaymentDetails" Height="662" Width="1300" AllowsTransparency="True" Background="Transparent" 
+        WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Border Background="White" CornerRadius="20" >
+            <Grid>
+
+
+
+                <StackPanel Background="White">
+                    <Label Content="Customer  Details" FontSize="45" FontWeight="DemiBold" Width="432" Height="106"/>
+                    <TextBlock Text="Full Name :"
+                                Foreground="Black"
+                                FontSize="15"
+                                FontWeight="Medium"
+                                FontFamily="Montserrat"                             
+                                Margin="10,15,0,0"/>
+                    <TextBox x:Name="txtFname"  Background="Transparent"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"                            
+                    Foreground="Black"
+                    CaretBrush="Black"
+                    BorderBrush="Black"
+                    BorderThickness="0,0,0,2"
+                    Height="45"
+                       Margin="0,0,220,0"
+                       
+                    VerticalContentAlignment="Center"
+                    Padding="20,0,0,0" Width="900"/>
+
+                    <TextBlock Text="Residential Address :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                    <TextBox x:Name="txtAddress"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="45"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+                    <TextBlock Text="National Identity Card Number (NIC) :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                    <TextBox x:Name="txtNIC"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+                             MaxLength="15"
+   Margin="0,0,220,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="900"/>
+
+
+                    <TextBlock Text="Country :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0" Height="32"/>
+
+                    <ComboBox Name="cobCuntry" Background="Transparent" Height="24" Width="132"  Margin="0,0,800,0">
+                        <ComboBoxItem Content="Afghanistan"/>
+                        <ComboBoxItem Content="Albania"/>
+                        <ComboBoxItem Content="Algeria"/>
+                        <ComboBoxItem Content="Andorra"/>
+                        <ComboBoxItem Content="Angola"/>
+                        <ComboBoxItem Content="Antigua and Barbuda"/>
+                        <ComboBoxItem Content="Argentina"/>
+                        <ComboBoxItem Content="Armenia"/>
+                        <ComboBoxItem Content="Australia"/>
+                        <ComboBoxItem Content="Austria"/>
+                        <ComboBoxItem Content="Azerbaijan"/>
+                        <ComboBoxItem Content="The Bahamas"/>
+                        <ComboBoxItem Content="Bahrain"/>
+                        <ComboBoxItem Content="Bangladesh"/>
+                        <ComboBoxItem Content="Barbados"/>
+                        <ComboBoxItem Content="Belarus"/>
+                        <ComboBoxItem Content="Belgium"/>
+                        <ComboBoxItem Content="Belize"/>
+                        <ComboBoxItem Content="Benin"/>
+                        <ComboBoxItem Content="Bhutan"/>
+                        <ComboBoxItem Content="Bolivia"/>
+                        <ComboBoxItem Content="Bosnia and Herzegovina"/>
+                        <ComboBoxItem Content="Botswana"/>
+                        <ComboBoxItem Content="Brazil"/>
+                        <ComboBoxItem Content="Brunei"/>
+                        <ComboBoxItem Content="Bulgaria"/>
+                        <ComboBoxItem Content="Burkina Faso"/>
+                        <ComboBoxItem Content="Burundi"/>
+                        <ComboBoxItem Content="Cabo Verde"/>
+                        <ComboBoxItem Content="Cambodia"/>
+                        <ComboBoxItem Content="Cameroon"/>
+                        <ComboBoxItem Content="Canada"/>
+                        <ComboBoxItem Content="Central African Republic"/>
+                        <ComboBoxItem Content="Chad"/>
+                        <ComboBoxItem Content="Chile"/>
+                        <ComboBoxItem Content="China"/>
+                        <ComboBoxItem Content="Colombia"/>
+                        <ComboBoxItem Content="Comoros"/>
+                        <ComboBoxItem Content="Congo, Democratic Republic of the"/>
+                        <ComboBoxItem Content="Congo, Republic of the"/>
+                        <ComboBoxItem Content="Costa Rica"/>
+                        <ComboBoxItem Content="Côte d’Ivoire"/>
+                        <ComboBoxItem Content="Croatia"/>
+                        <ComboBoxItem Content="Cuba"/>
+                        <ComboBoxItem Content="Cyprus"/>
+                        <ComboBoxItem Content="Czech Republic"/>
+                        <ComboBoxItem Content="Denmark"/>
+                        <ComboBoxItem Content="Djibouti"/>
+                        <ComboBoxItem Content="Dominica"/>
+                        <ComboBoxItem Content="Dominican Republic"/>
+                        <ComboBoxItem Content="East Timor (Timor-Leste)"/>
+                        <ComboBoxItem Content="Ecuador"/>
+                        <ComboBoxItem Content="Egypt"/>
+                        <ComboBoxItem Content="El Salvador"/>
+                        <ComboBoxItem Content="Equatorial Guinea"/>
+                        <ComboBoxItem Content="Eritrea"/>
+                        <ComboBoxItem Content="Estonia"/>
+                        <ComboBoxItem Content="Eswatini"/>
+                        <ComboBoxItem Content="Ethiopia"/>
+                        <ComboBoxItem Content="Fiji"/>
+                        <ComboBoxItem Content="Finland"/>
+                        <ComboBoxItem Content="France"/>
+                        <ComboBoxItem Content="Gabon"/>
+                        <ComboBoxItem Content="The Gambia"/>
+                        <ComboBoxItem Content="Georgia"/>
+                        <ComboBoxItem Content="Germany"/>
+                        <ComboBoxItem Content="Ghana"/>
+                        <ComboBoxItem Content="Greece"/>
+                        <ComboBoxItem Content="Grenada"/>
+                        <ComboBoxItem Content="Guatemala"/>
+                        <ComboBoxItem Content="Guinea"/>
+                        <ComboBoxItem Content="Guinea-Bissau"/>
+                        <ComboBoxItem Content="Guyana"/>
+                        <ComboBoxItem Content="Haiti"/>
+                        <ComboBoxItem Content="Honduras"/>
+                        <ComboBoxItem Content="Hungary"/>
+                        <ComboBoxItem Content="Iceland"/>
+                        <ComboBoxItem Content="India"/>
+                        <ComboBoxItem Content="Indonesia"/>
+                        <ComboBoxItem Content="Iran"/>
+                        <ComboBoxItem Content="Iraq"/>
+                        <ComboBoxItem Content="Ireland"/>
+                        <ComboBoxItem Content="Israel"/>
+                        <ComboBoxItem Content="Italy"/>
+                        <ComboBoxItem Content="Jamaica"/>
+                        <ComboBoxItem Content="Japan"/>
+                        <ComboBoxItem Content="Jordan"/>
+                        <ComboBoxItem Content="Kazakhstan"/>
+                        <ComboBoxItem Content="Kenya"/>
+                        <ComboBoxItem Content="Kiribati"/>
+                        <ComboBoxItem Content="Korea, North"/>
+                        <ComboBoxItem Content="Korea, South"/>
+                        <ComboBoxItem Content="Kosovo"/>
+                        <ComboBoxItem Content="Kuwait"/>
+                        <ComboBoxItem Content="Kyrgyzstan"/>
+                        <ComboBoxItem Content="Laos"/>
+                        <ComboBoxItem Content="Latvia"/>
+                        <ComboBoxItem Content="Lebanon"/>
+                        <ComboBoxItem Content="Lesotho"/>
+                        <ComboBoxItem Content="Liberia"/>
+                        <ComboBoxItem Content="Libya"/>
+                        <ComboBoxItem Content="Liechtenstein"/>
+                        <ComboBoxItem Content="Lithuania"/>
+                        <ComboBoxItem Content="Luxembourg"/>
+                        <ComboBoxItem Content="Madagascar"/>
+                        <ComboBoxItem Content="Malawi"/>
+                        <ComboBoxItem Content="Malaysia"/>
+                        <ComboBoxItem Content="Maldives"/>
+                        <ComboBoxItem Content="Mali"/>
+                        <ComboBoxItem Content="Malta"/>
+                        <ComboBoxItem Content="Marshall Islands"/>
+                        <ComboBoxItem Content="Mauritania"/>
+                        <ComboBoxItem Content="Mauritius"/>
+                        <ComboBoxItem Content="Mexico"/>
+                        <ComboBoxItem Content="Micronesia, Federated States of"/>
+                        <ComboBoxItem Content="Moldova"/>
+                        <ComboBoxItem Content="Monaco"/>
+                        <ComboBoxItem Content="Mongolia"/>
+                        <ComboBoxItem Content="Montenegro"/>
+                        <ComboBoxItem Content="Morocco"/>
+                        <ComboBoxItem Content="Mozambique"/>
+                        <ComboBoxItem Content="Myanmar (Burma)"/>
+                        <ComboBoxItem Content="Namibia"/>
+                        <ComboBoxItem Content="Nauru"/>
+                        <ComboBoxItem Content="Nepal"/>
+                        <ComboBoxItem Content="Netherlands"/>
+                        <ComboBoxItem Content="New Zealand"/>
+                        <ComboBoxItem Content="Nicaragua"/>
+                        <ComboBoxItem Content="Niger"/>
+                        <ComboBoxItem Content="Nigeria"/>
+                        <ComboBoxItem Content="North Macedonia"/>
+                        <ComboBoxItem Content="Norway"/>
+                        <ComboBoxItem Content="Oman"/>
+                        <ComboBoxItem Content="Pakistan"/>
+                        <ComboBoxItem Content="Palau"/>
+                        <ComboBoxItem Content="Panama"/>
+                        <ComboBoxItem Content="Papua New Guinea"/>
+                        <ComboBoxItem Content="Paraguay"/>
+                        <ComboBoxItem Content="Peru"/>
+                        <ComboBoxItem Content="Philippines"/>
+                        <ComboBoxItem Content="Poland"/>
+                        <ComboBoxItem Content="Portugal"/>
+                        <ComboBoxItem Content="Qatar"/>
+                        <ComboBoxItem Content="Romania"/>
+                        <ComboBoxItem Content="Russia"/>
+                        <ComboBoxItem Content="Rwanda"/>
+                        <ComboBoxItem Content="Saint Kitts and Nevis"/>
+                        <ComboBoxItem Content="Saint Lucia"/>
+                        <ComboBoxItem Content="Saint Vincent and the Grenadines"/>
+                        <ComboBoxItem Content="Samoa"/>
+                        <ComboBoxItem Content="San Marino"/>
+                        <ComboBoxItem Content="Sao Tome and Principe"/>
+                        <ComboBoxItem Content="Saudi Arabia"/>
+                        <ComboBoxItem Content="Senegal"/>
+                        <ComboBoxItem Content="Serbia"/>
+                        <ComboBoxItem Content="Seychelles"/>
+                        <ComboBoxItem Content="Sierra Leone"/>
+                        <ComboBoxItem Content="Singapore"/>
+                        <ComboBoxItem Content="Slovakia"/>
+                        <ComboBoxItem Content="Slovenia"/>
+                        <ComboBoxItem Content="Solomon Islands"/>
+                        <ComboBoxItem Content="Somalia"/>
+                        <ComboBoxItem Content="South Africa"/>
+                        <ComboBoxItem Content="Spain"/>
+                        <ComboBoxItem Content="Sri Lanka"/>
+                        <ComboBoxItem Content="Sudan"/>
+                        <ComboBoxItem Content="Sudan, South"/>
+                        <ComboBoxItem Content="Suriname"/>
+                        <ComboBoxItem Content="Sweden"/>
+                        <ComboBoxItem Content="Switzerland"/>
+                        <ComboBoxItem Content="Syria"/>
+                        <ComboBoxItem Content="Taiwan"/>
+                        <ComboBoxItem Content="Tajikistan"/>
+                        <ComboBoxItem Content="Tanzania"/>
+                        <ComboBoxItem Content="Thailand"/>
+                        <ComboBoxItem Content="Togo"/>
+                        <ComboBoxItem Content="Tonga"/>
+                        <ComboBoxItem Content="Trinidad and Tobago"/>
+                        <ComboBoxItem Content="Tunisia"/>
+                        <ComboBoxItem Content="Turkey"/>
+                        <ComboBoxItem Content="Turkmenistan"/>
+                        <ComboBoxItem Content="Tuvalu"/>
+                        <ComboBoxItem Content="Uganda"/>
+                        <ComboBoxItem Content="Ukraine"/>
+                        <ComboBoxItem Content="United Arab Emirates"/>
+                        <ComboBoxItem Content="United Kingdom"/>
+                        <ComboBoxItem Content="United States"/>
+                        <ComboBoxItem Content="Uruguay"/>
+                        <ComboBoxItem Content="Uzbekistan"/>
+                        <ComboBoxItem Content="Vanuatu"/>
+                        <ComboBoxItem Content="Vatican City"/>
+                        <ComboBoxItem Content="Venezuela"/>
+                        <ComboBoxItem Content="Vietnam"/>
+                        <ComboBoxItem Content="Yemen"/>
+                        <ComboBoxItem Content="Zambia"/>
+                        <ComboBoxItem Content="Zimbabwe"/>
+
+
+                    </ComboBox>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="228*"/>
+                            <ColumnDefinition Width="9*"/>
+                            <ColumnDefinition Width="28*"/>
+                            <ColumnDefinition Width="1035*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Telephone :"
+Foreground="Black"
+FontSize="15"
+FontWeight="Medium"
+FontFamily="Montserrat"                             
+Margin="10,18,0,3" Height="32" Grid.ColumnSpan="4"/>
+                        <ComboBox Name="cobNO" Background="Transparent"  Margin="24,31,984,0" Grid.ColumnSpan="2"  Grid.Column="2">
+                            <ComboBoxItem Content="+93"/>
+                            <ComboBoxItem Content="+355"/>
+                            <ComboBoxItem Content="+213"/>
+                            <ComboBoxItem Content="+376"/>
+                            <ComboBoxItem Content="+244"/>
+                            <ComboBoxItem Content="+1-268"/>
+                            <ComboBoxItem Content="+54"/>
+                            <ComboBoxItem Content="+374"/>
+                            <ComboBoxItem Content="+61"/>
+                            <ComboBoxItem Content="+43"/>
+                            <ComboBoxItem Content="+994"/>
+                            <ComboBoxItem Content="+1-242"/>
+                            <ComboBoxItem Content="+973"/>
+                            <ComboBoxItem Content="+880"/>
+                            <ComboBoxItem Content="+1-246"/>
+                            <ComboBoxItem Content="+375"/>
+                            <ComboBoxItem Content="+32"/>
+                            <ComboBoxItem Content="+501"/>
+                            <ComboBoxItem Content="+229"/>
+                            <ComboBoxItem Content="+975"/>
+                            <ComboBoxItem Content="+591"/>
+                            <ComboBoxItem Content="+387"/>
+                            <ComboBoxItem Content="+267"/>
+                            <ComboBoxItem Content="+55"/>
+                            <ComboBoxItem Content="+673"/>
+                            <ComboBoxItem Content="+359"/>
+                            <ComboBoxItem Content="+226"/>
+                            <ComboBoxItem Content="+257"/>
+                            <ComboBoxItem Content="+238"/>
+                            <ComboBoxItem Content="+855"/>
+                            <ComboBoxItem Content="+237"/>
+                            <ComboBoxItem Content="+1"/>
+                            <ComboBoxItem Content="+236"/>
+                            <ComboBoxItem Content="+235"/>
+                            <ComboBoxItem Content="+56"/>
+                            <ComboBoxItem Content="+86"/>
+                            <ComboBoxItem Content="+57"/>
+                            <ComboBoxItem Content="+269"/>
+                            <ComboBoxItem Content="+243"/>
+                            <ComboBoxItem Content="+242"/>
+                            <ComboBoxItem Content="+506"/>
+                            <ComboBoxItem Content="+225"/>
+                            <ComboBoxItem Content="+385"/>
+                            <ComboBoxItem Content="+53"/>
+                            <ComboBoxItem Content="+357"/>
+                            <ComboBoxItem Content="+420"/>
+                            <ComboBoxItem Content="+45"/>
+                            <ComboBoxItem Content="+253"/>
+                            <ComboBoxItem Content="+1-767"/>
+                            <ComboBoxItem Content="+1-809"/>
+                            <ComboBoxItem Content="+1-829"/>
+                            <ComboBoxItem Content="+1-849"/>
+                            <ComboBoxItem Content="+670"/>
+                            <ComboBoxItem Content="+593"/>
+                            <ComboBoxItem Content="+20"/>
+                            <ComboBoxItem Content="+503"/>
+                            <ComboBoxItem Content="+240"/>
+                            <ComboBoxItem Content="+291"/>
+                            <ComboBoxItem Content="+372"/>
+                            <ComboBoxItem Content="+268"/>
+                            <ComboBoxItem Content="+251"/>
+                            <ComboBoxItem Content="+679"/>
+                            <ComboBoxItem Content="+358"/>
+                            <ComboBoxItem Content="+33"/>
+                            <ComboBoxItem Content="+241"/>
+                            <ComboBoxItem Content="+220"/>
+                            <ComboBoxItem Content="+995"/>
+                            <ComboBoxItem Content="+49"/>
+                            <ComboBoxItem Content="+233"/>
+                            <ComboBoxItem Content="+30"/>
+                            <ComboBoxItem Content="+1-473"/>
+                            <ComboBoxItem Content="+502"/>
+                            <ComboBoxItem Content="+224"/>
+                            <ComboBoxItem Content="+245"/>
+                            <ComboBoxItem Content="+592"/>
+                            <ComboBoxItem Content="+509"/>
+                            <ComboBoxItem Content="+504"/>
+                            <ComboBoxItem Content="+36"/>
+                            <ComboBoxItem Content="+354"/>
+                            <ComboBoxItem Content="+91"/>
+                            <ComboBoxItem Content="+62"/>
+                            <ComboBoxItem Content="+98"/>
+                            <ComboBoxItem Content="+964"/>
+                            <ComboBoxItem Content="+353"/>
+                            <ComboBoxItem Content="+972"/>
+                            <ComboBoxItem Content="+39"/>
+                            <ComboBoxItem Content="+1-876"/>
+                            <ComboBoxItem Content="+81"/>
+                            <ComboBoxItem Content="+962"/>
+                            <ComboBoxItem Content="+7"/>
+                            <ComboBoxItem Content="+254"/>
+                            <ComboBoxItem Content="+686"/>
+                            <ComboBoxItem Content="+850"/>
+                            <ComboBoxItem Content="+82"/>
+                            <ComboBoxItem Content="+383"/>
+                            <ComboBoxItem Content="+965"/>
+                            <ComboBoxItem Content="+996"/>
+                            <ComboBoxItem Content="+856"/>
+                            <ComboBoxItem Content="+371"/>
+                            <ComboBoxItem Content="+961"/>
+                            <ComboBoxItem Content="+266"/>
+                            <ComboBoxItem Content="+231"/>
+                            <ComboBoxItem Content="+218"/>
+                            <ComboBoxItem Content="+423"/>
+                            <ComboBoxItem Content="+370"/>
+                            <ComboBoxItem Content="+352"/>
+                            <ComboBoxItem Content="+261"/>
+                            <ComboBoxItem Content="+265"/>
+                            <ComboBoxItem Content="+60"/>
+                            <ComboBoxItem Content="+960"/>
+                            <ComboBoxItem Content="+223"/>
+                            <ComboBoxItem Content="+356"/>
+                            <ComboBoxItem Content="+692"/>
+                            <ComboBoxItem Content="+222"/>
+                            <ComboBoxItem Content="+230"/>
+                            <ComboBoxItem Content="+52"/>
+                            <ComboBoxItem Content="+691"/>
+                            <ComboBoxItem Content="+373"/>
+                            <ComboBoxItem Content="+377"/>
+                            <ComboBoxItem Content="+976"/>
+                            <ComboBoxItem Content="+382"/>
+                            <ComboBoxItem Content="+212"/>
+                            <ComboBoxItem Content="+258"/>
+                            <ComboBoxItem Content="+95"/>
+                            <ComboBoxItem Content="+264"/>
+                            <ComboBoxItem Content="+674"/>
+                            <ComboBoxItem Content="+977"/>
+                            <ComboBoxItem Content="+31"/>
+                            <ComboBoxItem Content="+64"/>
+                            <ComboBoxItem Content="+505"/>
+                            <ComboBoxItem Content="+227"/>
+                            <ComboBoxItem Content="+234"/>
+                            <ComboBoxItem Content="+389"/>
+                            <ComboBoxItem Content="+47"/>
+                            <ComboBoxItem Content="+968"/>
+                            <ComboBoxItem Content="+92"/>
+                            <ComboBoxItem Content="+680"/>
+                            <ComboBoxItem Content="+507"/>
+                            <ComboBoxItem Content="+675"/>
+                            <ComboBoxItem Content="+595"/>
+                            <ComboBoxItem Content="+51"/>
+                            <ComboBoxItem Content="+63"/>
+                            <ComboBoxItem Content="+48"/>
+                            <ComboBoxItem Content="+351"/>
+                            <ComboBoxItem Content="+974"/>
+                            <ComboBoxItem Content="+40"/>
+                            <ComboBoxItem Content="+7"/>
+                            <ComboBoxItem Content="+250"/>
+                            <ComboBoxItem Content="+1-869"/>
+                            <ComboBoxItem Content="+1-758"/>
+                            <ComboBoxItem Content="+1-784"/>
+                            <ComboBoxItem Content="+685"/>
+                            <ComboBoxItem Content="+378"/>
+                            <ComboBoxItem Content="+239"/>
+                            <ComboBoxItem Content="+966"/>
+                            <ComboBoxItem Content="+221"/>
+                            <ComboBoxItem Content="+381"/>
+                            <ComboBoxItem Content="+248"/>
+                            <ComboBoxItem Content="+232"/>
+                            <ComboBoxItem Content="+65"/>
+                            <ComboBoxItem Content="+421"/>
+                            <ComboBoxItem Content="+386"/>
+                            <ComboBoxItem Content="+677"/>
+                            <ComboBoxItem Content="+252"/>
+                            <ComboBoxItem Content="+27"/>
+                            <ComboBoxItem Content="+34"/>
+                            <ComboBoxItem Content="+94"/>
+                            <ComboBoxItem Content="+249"/>
+                            <ComboBoxItem Content="+211"/>
+                            <ComboBoxItem Content="+597"/>
+                            <ComboBoxItem Content="+46"/>
+                            <ComboBoxItem Content="+41"/>
+                            <ComboBoxItem Content="+963"/>
+                            <ComboBoxItem Content="+886"/>
+                            <ComboBoxItem Content="+992"/>
+                            <ComboBoxItem Content="+255"/>
+                            <ComboBoxItem Content="+66"/>
+                            <ComboBoxItem Content="+228"/>
+                            <ComboBoxItem Content="+676"/>
+                            <ComboBoxItem Content="+1-868"/>
+                            <ComboBoxItem Content="+216"/>
+                            <ComboBoxItem Content="+90"/>
+                            <ComboBoxItem Content="+993"/>
+                            <ComboBoxItem Content="+688"/>
+                            <ComboBoxItem Content="+256"/>
+                            <ComboBoxItem Content="+380"/>
+                            <ComboBoxItem Content="+971"/>
+                            <ComboBoxItem Content="+44"/>
+                            <ComboBoxItem Content="+1"/>
+                            <ComboBoxItem Content="+598"/>
+                            <ComboBoxItem Content="+998"/>
+                            <ComboBoxItem Content="+678"/>
+                            <ComboBoxItem Content="+379"/>
+                            <ComboBoxItem Content="+58"/>
+                            <ComboBoxItem Content="+84"/>
+                            <ComboBoxItem Content="+967"/>
+                            <ComboBoxItem Content="+260"/>
+                            <ComboBoxItem Content="+263"/>
+
+
+                        </ComboBox>
+                        <TextBox x:Name="txtTele"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="56,12,768,-1"
+   MaxLength="13"
+VerticalContentAlignment="Bottom"
+Padding="20,0,0,0" Grid.Column="3" MouseEnter="txtTele_MouseEnter" />
+                    </Grid>
+
+                    <TextBlock Text="Email :"
+            Foreground="Black"
+            FontSize="15"
+            FontWeight="Medium"
+            FontFamily="Montserrat"                             
+            Margin="10,15,0,0"/>
+                    <TextBox x:Name="txtEmail"  Background="Transparent"
+FontSize="13"
+FontWeight="Medium"
+FontFamily="Montserrat"                            
+Foreground="Black"
+CaretBrush="Black"
+BorderBrush="Black"
+BorderThickness="0,0,0,2"
+Height="42"
+   Margin="0,0,600,0"
+   
+VerticalContentAlignment="Center"
+Padding="20,0,0,0" Width="479"/>
+
+
+
+
+
+                    <Button x:Name="btnSubmit"                          
+  BorderThickness="4"
+  Content="Submit"
+  Foreground="White"
+  FontSize="14"
+  FontFamily="Montserrat"
+  Cursor="Hand"                           
+  Height="114" Width="452" Margin="550,0,0,0" Click="btnSubmit_Click"
+>
+
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="CornflowerBlue"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Goldenrod"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Width="150" Height="40"
+              CornerRadius="20"
+              Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                            HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+                <Image Source="/Images/cusDetails (1).png" Margin="1097,22,34,450" />
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

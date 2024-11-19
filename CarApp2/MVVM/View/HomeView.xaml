@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="CarApp2.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CarApp2.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="588" d:DesignWidth="1280" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="185*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="318*"/>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="47*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="Black" Grid.ColumnSpan="3" Grid.RowSpan="2" CornerRadius="20">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="325*"/>
+
+
+                </Grid.ColumnDefinitions>
+                <Image Source="/Images/Toyota_C-HR_review_front34_dynamic (1).jpg" Opacity="0.8" Margin="0,-1,-2,-1" Stretch="UniformToFill" />
+                <Rectangle  Stroke="black" RadiusX="2.951" RadiusY="2.951" Margin="0,0,530,0" Fill="black" Opacity="0.7"/>
+                <TextBlock HorizontalAlignment="Left" Margin="42,30,0,0" TextWrapping="Wrap" FontFamily="Century Gothic" FontSize="53" Text="SSVP Prime Vehicles " VerticalAlignment="Top" Foreground="White" Height="130" Width="384" FontWeight="Bold" Opacity="0.9"/>
+                <TextBlock HorizontalAlignment="Left" Margin="42,200,0,0" TextWrapping="Wrap" FontFamily="Arial" Text="Welcome to SSVP, where innovation fuels every journey. Our sleek designs and cutting-edge technology redefine driving. Experience luxury, performance, and sustainability with our state-of-the-art vehicles. Join us and shape the future of mobility. Discover a driving experience like no other. " VerticalAlignment="Top" Foreground="White" Height="160" Width="459" Opacity="0.9" FontSize="18"/>
+                <Button Content="Build Your Own" HorizontalAlignment="Left" Margin="42,403,0,0" VerticalAlignment="Top" Height="34" Width="115" Background="#FFF5814B" Foreground="#FFFDFBFB" RenderTransformOrigin="0.583,2.571" />
+
+
+
+
+
+
+            </Grid>
+
+
+
+        </Border>
+    </Grid>
+</UserControl>
